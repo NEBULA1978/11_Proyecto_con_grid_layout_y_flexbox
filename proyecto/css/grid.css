@@ -1,21 +1,28 @@
+
 #container{
     display: grid;
+    /* el header ocupa dos columnas */
     grid-template-areas:    'header header'
+    /* Debajo dos columnas sidebar y fotos */
                             'sidebar photos';
 }
 
 header{
+    /* El header toma las dos columnas */
     grid-area: header;
 }
 
 #sidebar{
+    /* ocupa una columna */
     grid-area: sidebar;
 }
 
 #photo-container{
+    /* ocupa una columna */
     grid-area: photos;
 }
 
+/* Tamaño movil ocupan una fila debajo del otro */
 @media only screen and (max-width: 600px) {
     #container{
         grid-template-areas:    'header'
