@@ -1,3 +1,8 @@
+/* Para ver la foto grande en la caja */
+/* .photo img {
+    width: 100%;
+} */
+
 #photo-container {
     display: flex;
     flex-wrap: wrap;
