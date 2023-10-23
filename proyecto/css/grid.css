@@ -24,7 +24,7 @@ header{
 
 /* Tamaño movil ocupan una fila debajo del otro */
 /* Cuando sea menor de 600px va a tener esta estructura */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #container{
         grid-template-areas:    'header'
                                 'sidebar'
@@ -32,13 +32,13 @@ header{
     }
 }
 /* Cuando sea entre 600 y 768p tendra esta estructura */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     #container{
         grid-template-areas:    'header'
                                 'sidebar'
                                 'photos';
     }
-}
+} */
 
 @media only screen and (min-width: 768px) {
     #container{
