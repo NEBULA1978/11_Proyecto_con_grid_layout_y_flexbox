@@ -1,72 +1,69 @@
 #photo-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+    line-height: 0;
+    -webkit-column-count: 5;
+    -moz-column-count:    5;
+    column-count:         5;
+    -webkit-column-gap:   10px;
+    -moz-column-gap:      10px;
+    column-gap:           10px;
+ }
+/* Ponemos imagenes 100 * 100 */
+ #photo-container .photo{
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
 }
 
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+#photo-container .photo img {
+   width: 100% !important;
+   height: auto !important;
 }
-  
-.column .photo {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-.column .photo img{
-    width: 100%;
-    height: auto;
-}
-
-#photo-container .photo .title{
-    position: absolute;
-    line-height: 20px;
-    padding: 15px;
-    opacity: 1;
-    color: white;
-    transition: all 0.2s;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#photo-container .photo:hover .title{
-    opacity: 1;
-}
-
-
+/* Cuando sea menosde 600px una columna */
 @media only screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+    #photo-container {
+        -moz-column-count:    1;
+        -webkit-column-count: 1;
+        column-count:         1;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .column {
-        flex: 50%;
-        max-width: 100%;
+    #photo-container {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .column {
-        flex: 33.33%;
-        max-width: 100%;
+    #photo-container {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .column {
-        flex: 25%;
-        max-width: 100%;
+    #photo-container {
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-
+    #photo-container {
+        -moz-column-count:    4;
+        -webkit-column-count: 4;
+        column-count:         4;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
-
+    #photo-container {
+        -moz-column-count:    5;
+        -webkit-column-count: 5;
+        column-count:         5;
+    }
 }
